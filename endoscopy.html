@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Endoscopy - Post-Procedure Instructions | Dr Narendra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        @media print {
+            .no-print { display: none; }
+            body { font-size: 12pt; }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <!-- Header -->
+        <div class="bg-white rounded-2xl shadow-xl p-8 mb-6">
+            <div class="flex items-center justify-between mb-4">
+                <a href="index.html" class="no-print text-blue-600 hover:text-blue-800 flex items-center">
+                    <i class="fas fa-arrow-left mr-2"></i> Back to All Procedures
+                </a>
+                <button onclick="window.print()" class="no-print bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 flex items-center">
+                    <i class="fas fa-print mr-2"></i> Print Instructions
+                </button>
+            </div>
+            <div class="text-center">
+                <div class="bg-teal-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-microscope text-teal-600 text-4xl"></i>
+                </div>
+                <h1 class="text-4xl font-bold text-gray-800 mb-2">Endoscopy</h1>
+                <p class="text-xl text-gray-600">Your Post-Procedure Care Instructions</p>
+            </div>
+        </div>
+
+        <!-- Important: Your Report -->
+        <div class="bg-gradient-to-r from-blue-600 to-indigo-600 rounded-2xl shadow-xl p-8 mb-6 text-white">
+            <div class="flex items-start">
+                <div class="bg-white bg-opacity-20 p-4 rounded-full mr-4 flex-shrink-0">
+                    <i class="fas fa-file-medical text-white text-3xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-4">Your Endoscopy Report</h2>
+                    <p class="text-xl leading-relaxed mb-4">
+                        You should have received a report about your endoscopy procedure. This report contains important information about what was found during your examination.
+                    </p>
+                    <div class="bg-white bg-opacity-20 rounded-xl p-6">
+                        <p class="text-lg font-semibold mb-2">
+                            <i class="fas fa-arrow-right mr-2"></i> Please read your endoscopy report carefully
+                        </p>
+                        <p class="text-lg font-semibold">
+                            <i class="fas fa-arrow-right mr-2"></i> The report will tell you what was found and any recommended next steps
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- What Was Done -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-info-circle text-blue-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">What Was Done</h2>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-6">
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    An endoscopy is a procedure where a thin, flexible tube with a camera (endoscope) is passed through your mouth 
+                    to examine your food pipe (oesophagus), stomach, and the first part of your small intestine. This allows us to 
+                    see the inside of your digestive system and check for any problems.
+                </p>
+            </div>
+        </div>
+
+        <!-- Immediate After Care (First Few Hours) -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-yellow-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-clock text-yellow-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">First Few Hours After Procedure</h2>
+            </div>
+            <div class="bg-yellow-50 rounded-xl p-6 border-l-4 border-yellow-500">
+                <ul class="space-y-4 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-bed text-yellow-600 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <strong>Rest for the remainder of the day</strong>
+                            <p class="text-gray-600 mt-1">You may feel drowsy if you had sedation</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-car-side text-yellow-600 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <strong>Do NOT drive for 24 hours if you had sedation</strong>
+                            <p class="text-gray-600 mt-1">Arrange for someone to drive you home</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-briefcase text-yellow-600 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <strong>Avoid important decisions or operating machinery for 24 hours</strong>
+                            <p class="text-gray-600 mt-1">Sedation can affect your judgment temporarily</p>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-wine-glass text-yellow-600 text-xl mt-1 mr-3"></i>
+                        <div>
+                            <strong>No alcohol for 24 hours</strong>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Eating and Drinking -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-utensils text-green-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Eating and Drinking</h2>
+            </div>
+            <div class="space-y-4">
+                <div class="bg-green-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-tint text-green-600 mr-2"></i>
+                        Drinking
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>You can drink water as soon as you feel ready (usually after 1 hour)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Wait until the numbness in your throat has gone (if throat spray was used)</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-green-50 rounded-xl p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3 flex items-center">
+                        <i class="fas fa-hamburger text-green-600 mr-2"></i>
+                        Eating
+                    </h3>
+                    <ul class="space-y-2 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>You can eat normally once you feel comfortable</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                            <span>Start with light, easy-to-digest foods</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-lightbulb text-green-600 mt-1 mr-3"></i>
+                            <span><strong>Unless your report says otherwise</strong> - always check your report for specific instructions</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Common Side Effects -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-purple-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-heartbeat text-purple-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Normal After Effects</h2>
+            </div>
+            <div class="bg-purple-50 rounded-xl p-6">
+                <p class="text-lg text-gray-700 mb-4">These symptoms are normal and should settle within 24 hours:</p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-purple-600 text-sm mt-2 mr-3"></i>
+                        <span>Sore throat or feeling of something in your throat</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-purple-600 text-sm mt-2 mr-3"></i>
+                        <span>Feeling bloated or having wind (from air used during the procedure)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-purple-600 text-sm mt-2 mr-3"></i>
+                        <span>Mild discomfort in your stomach</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-purple-600 text-sm mt-2 mr-3"></i>
+                        <span>Feeling tired or drowsy (from sedation)</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Warning Signs -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-red-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-exclamation-triangle text-red-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Warning Signs</h2>
+            </div>
+            <div class="bg-red-50 rounded-xl p-6 border-l-4 border-red-500">
+                <p class="text-lg text-gray-700 mb-4"><strong>Contact your doctor immediately if you experience:</strong></p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Severe chest pain or abdominal pain</strong></span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Difficulty breathing</strong></span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Vomiting blood</strong> or vomit that looks like coffee grounds</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Black, tarry stools</strong> (bowel motions)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Fever</strong> (temperature above 38°C)</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Difficulty swallowing</strong> that gets worse</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-circle text-red-600 text-sm mt-2 mr-3"></i>
+                        <span><strong>Increasing abdominal swelling</strong></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Biopsies (If Taken) -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-vial text-indigo-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">If Biopsies Were Taken</h2>
+            </div>
+            <div class="bg-indigo-50 rounded-xl p-6">
+                <p class="text-lg text-gray-700 mb-4">
+                    If tissue samples (biopsies) were taken during your endoscopy:
+                </p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-indigo-600 mt-1 mr-3"></i>
+                        <span>This is normal and routine - biopsies help us get more information</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-indigo-600 mt-1 mr-3"></i>
+                        <span>Results usually take 1-2 weeks to come back from the laboratory</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-indigo-600 mt-1 mr-3"></i>
+                        <span>You may notice a small amount of blood in your stools - this is normal</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check text-indigo-600 mt-1 mr-3"></i>
+                        <span>Your report will tell you if biopsies were taken</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Follow-Up -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-calendar-check text-blue-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Follow-Up</h2>
+            </div>
+            <div class="bg-blue-50 rounded-xl p-6 space-y-4">
+                <div class="bg-white rounded-lg p-4 border-l-4 border-blue-500">
+                    <p class="text-lg text-gray-800 mb-2">
+                        <i class="fas fa-file-alt text-blue-600 mr-2"></i>
+                        <strong>Check your endoscopy report</strong>
+                    </p>
+                    <p class="text-gray-700">
+                        Your report will tell you if you need a follow-up appointment and when.
+                    </p>
+                </div>
+                <div class="bg-gradient-to-r from-blue-500 to-indigo-500 rounded-lg p-6 text-white">
+                    <p class="text-xl font-semibold mb-2">
+                        <i class="fas fa-phone mr-2"></i>
+                        If your report says to follow up in the rooms:
+                    </p>
+                    <p class="text-lg">
+                        <strong>Please call my private rooms to make an appointment.</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Return to Normal Activities -->
+        <div class="bg-white rounded-2xl shadow-lg p-8 mb-6">
+            <div class="flex items-center mb-4">
+                <div class="bg-green-100 p-3 rounded-full mr-4">
+                    <i class="fas fa-running text-green-600 text-2xl"></i>
+                </div>
+                <h2 class="text-3xl font-bold text-gray-800">Return to Normal Activities</h2>
+            </div>
+            <div class="bg-green-50 rounded-xl p-6">
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                        <span>You can return to normal activities the next day</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                        <span>Most people return to work the next day</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                        <span>Resume your normal diet unless your report says otherwise</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-600 mt-1 mr-3"></i>
+                        <span>Continue your regular medications unless advised otherwise</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-gradient-to-r from-teal-600 to-blue-600 rounded-2xl shadow-lg p-8 text-white text-center">
+            <i class="fas fa-clipboard-check text-3xl mb-3"></i>
+            <p class="text-xl mb-2">Remember: Your endoscopy report contains important information specific to you.</p>
+            <p class="text-lg opacity-90">Please read it carefully and follow any specific instructions it contains.</p>
+        </div>
+    </div>
+</body>
+</html>
