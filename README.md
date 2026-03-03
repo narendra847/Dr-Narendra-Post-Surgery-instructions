@@ -14,6 +14,7 @@ This website provides post-operative care instructions for surgical procedures. 
 4. **Fundoplication** (Anti-Reflux Surgery)
 5. **Umbilical Hernia Repair** (Belly Button Hernia)
 6. **Endoscopy** (Upper Gastrointestinal Endoscopy)
+7. **Oesophageal Outpouch Surgery** (Zenker's Diverticulum / Cricopharyngeal Myotomy)
 
 ---
 
@@ -143,6 +144,7 @@ For questions or assistance with updating the website, contact your web administ
 - `fundoplication.html` - Fundoplication instructions
 - `umbilical-hernia.html` - Umbilical hernia repair instructions
 - `endoscopy.html` - Endoscopy post-procedure instructions
+- `zenkers-diverticulum.html` - Zenker's diverticulum repair instructions
 - `README.md` - Technical documentation
 - `SHARING-INSTRUCTIONS.md` - Guide for sharing and hosting the website
 
