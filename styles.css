@@ -1,0 +1,73 @@
+/* Dr Narendra - Post-operative Instructions Website */
+/* Main Stylesheet - Extracted for Security */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+/* General Styles */
+.section-card {
+    transition: all 0.3s ease;
+}
+
+.section-card:hover {
+    transform: translateX(5px);
+}
+
+.procedure-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-height: 100%;
+}
+
+.procedure-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    .procedure-card:active {
+        transform: translateY(-2px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+}
+
+/* Icon sizing */
+.icon-circle {
+    min-width: 60px;
+    min-height: 60px;
+}
+
+@media (max-width: 640px) {
+    .icon-circle {
+        min-width: 52px;
+        min-height: 52px;
+    }
+}
+
+/* Print styles */
+@media print {
+    .no-print {
+        display: none;
+    }
+    body {
+        font-size: 12pt;
+    }
+}
+
+/* Improve readability on small screens */
+@media (max-width: 640px) {
+    body {
+        font-size: 16px;
+    }
+}
+
+/* Focus states for accessibility */
+.procedure-card:focus,
+a:focus,
+button:focus {
+    outline: 2px solid #2563eb;
+    outline-offset: 2px;
+}
