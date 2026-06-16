@@ -10,151 +10,233 @@
     <meta http-equiv="Expires" content="0">
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="permissions-policy" content="geolocation=(), microphone=(), camera=()">
-    <title>Post Operative Instructions</title>
+    <title>Dr Narendra - Post Operative Instructions</title>
     <script src="https://cdn.tailwindcss.com" integrity="sha384-C6RzsynM9u94gFlUstIOrAbYkQJJpM+p+qEYuO8TFfH2Kq9+T9i8aZK7VRKZ5Wo3k" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usznXo+7mWK9eL7XL1+UFVWffJMAnlu62awQq9duJvTIPSvEStAM0s/VVB6PFw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .procedure-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-height: 100%;
+        }
+        .procedure-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+        @media (max-width: 768px) {
+            .procedure-card:active {
+                transform: translateY(-2px);
+                box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            }
+        }
+        /* Ensure proper touch sizing */
+        .icon-circle {
+            min-width: 60px;
+            min-height: 60px;
+        }
+        @media (max-width: 640px) {
+            .icon-circle {
+                min-width: 52px;
+                min-height: 52px;
+            }
+        }
+        /* Improve readability on small screens */
+        @media (max-width: 640px) {
+            body {
+                font-size: 16px;
+            }
+        }
+    </style>
 </head>
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
-    <div class="container mx-auto px-4 py-12 max-w-6xl">
-        <!-- Header -->
-        <div class="text-center mb-12">
-            <h1 class="text-5xl font-bold text-gray-800 mb-2">Dr Narendra</h1>
-            <h2 class="text-3xl font-semibold text-blue-600 mb-4">Post Operative Instructions</h2>
-            <p class="text-xl text-gray-600">Select your procedure for personalized care instructions</p>
+    <div class="container mx-auto px-3 sm:px-4 py-8 sm:py-12">
+        <!-- Header Section -->
+        <div class="text-center mb-8 sm:mb-12">
+            <div class="mb-3 sm:mb-4">
+                <i class="fas fa-user-md text-blue-600 text-4xl sm:text-5xl mb-2 sm:mb-3"></i>
+            </div>
+            <h1 class="text-3xl sm:text-5xl font-bold text-gray-800 mb-1 sm:mb-2">
+                Dr Narendra
+            </h1>
+            <h2 class="text-2xl sm:text-3xl font-semibold text-blue-600 mb-3 sm:mb-4">
+                Post Operative Instructions
+            </h2>
+            <p class="text-base sm:text-xl text-gray-600 px-2">Select your procedure for personalized care instructions</p>
         </div>
 
         <!-- Procedure Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-4 sm:gap-6 lg:gap-8 max-w-6xl mx-auto">
+           
             <!-- Laparoscopic Cholecystectomy -->
-            <a href="cholecystectomy.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-green-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-procedures text-green-600 text-3xl"></i>
+            <a href="cholecystectomy.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-green-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-anatomy-48.png"
+                             alt="Gallbladder icon"
+                             class="w-8 sm:w-9 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Gallbladder Removal</h3>
-                        <p class="text-gray-600">Laparoscopic Cholecystectomy</p>
-                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Gallbladder Removal</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Laparoscopic Cholecystectomy</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
 
             <!-- Inguinal Hernia Repair -->
-            <a href="inguinal-hernia.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-purple-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-user-md text-purple-600 text-3xl"></i>
+            <a href="inguinal-hernia.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-purple-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-inguinal-hernia-50.png"
+                             alt="Inguinal hernia icon"
+                             class="w-8 sm:w-10 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Groin Hernia Repair</h3>
-                        <p class="text-gray-600">Inguinal Hernia Repair</p>
-                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Groin Hernia Repair</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Inguinal Hernia Repair</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
 
             <!-- Hiatal Hernia Repair -->
-            <a href="hiatal-hernia.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-orange-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-heartbeat text-orange-600 text-3xl"></i>
+            <a href="hiatal-hernia.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-orange-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-stomach-80.png"
+                             alt="Stomach icon"
+                             class="w-8 sm:w-10 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Hiatal Hernia Repair</h3>
-                        <p class="text-gray-600">Laparoscopic Hiatal Hernia Repair</p>
-                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Hiatal Hernia Repair</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Laparoscopic Hiatal Hernia Repair</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
 
             <!-- Fundoplication -->
-            <a href="fundoplication.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-red-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-stethoscope text-red-600 text-3xl"></i>
+            <a href="fundoplication.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-red-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-stomach-80.png"
+                             alt="Stomach icon"
+                             class="w-8 sm:w-10 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Fundoplication</h3>
-                        <p class="text-gray-600">Anti-Reflux Surgery</p>
-                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Fundoplication</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Anti-Reflux Surgery</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
 
             <!-- Umbilical Hernia Repair -->
-            <a href="umbilical-hernia.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-cyan-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-user-injured text-cyan-600 text-3xl"></i>
+            <a href="umbilical-hernia.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-cyan-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-umbilical-hernia-50.png"
+                             alt="Umbilical hernia icon"
+                             class="w-8 sm:w-10 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Umbilical/Epigastric/Ventral Hernia</h3>
-                        <p class="text-gray-600">Abdominal Wall Hernia Repair</p>
-                    </div>
+                    <h2 class="text-lg sm:text-xl font-bold text-gray-800">Umbilical/Epigastric/Ventral Hernia</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Abdominal wall hernia repair</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
 
             <!-- Endoscopy -->
-            <a href="endoscopy.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-teal-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-microscope text-teal-600 text-3xl"></i>
+            <a href="endoscopy.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-teal-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-gastroscopy-50.png"
+                             alt="Gastroscopy icon"
+                             class="w-8 sm:w-10 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Endoscopy</h3>
-                        <p class="text-gray-600">Upper Gastrointestinal Endoscopy</p>
-                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Endoscopy</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Upper Gastrointestinal Endoscopy</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
 
             <!-- Zenker's Diverticulum -->
-            <a href="zenkers-diverticulum.html" class="procedure-card bg-white rounded-2xl shadow-lg p-8 block hover:shadow-2xl transition-shadow">
-                <div class="flex items-center mb-6">
-                    <div class="bg-pink-100 p-4 rounded-full mr-4 flex-shrink-0">
-                        <i class="fas fa-lungs text-pink-600 text-3xl"></i>
+            <a href="zenkers-diverticulum.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-pink-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <img src="icons8-throat-50.png"
+                             alt="Throat icon"
+                             class="w-8 sm:w-10 h-auto object-contain block">
                     </div>
-                    <div>
-                        <h3 class="text-2xl font-bold text-gray-800">Oesophageal Outpouch Surgery</h3>
-                        <p class="text-gray-600">Zenker's Diverticulum Repair</p>
-                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Oesophageal Outpouch Surgery</h2>
                 </div>
-                <div class="flex items-center text-blue-600 font-semibold">
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Zenker's Diverticulum Repair</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
                     <span>View Instructions</span>
                     <i class="fas fa-arrow-right ml-2"></i>
                 </div>
             </a>
+
+            <!-- TEMPLATE FOR ADDING NEW PROCEDURES -->
+            <!-- Copy the section below and customize for each new procedure -->
+            <!--
+            <a href="NEW-PROCEDURE.html" class="procedure-card bg-white rounded-2xl shadow-lg p-6 sm:p-8 block focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+                <div class="flex items-center mb-4">
+                    <div class="icon-circle bg-blue-100 p-3 sm:p-4 rounded-full mr-3 sm:mr-4 flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-syringe text-blue-600 text-3xl"></i>
+                    </div>
+                    <h2 class="text-xl sm:text-2xl font-bold text-gray-800">Procedure Display Name</h2>
+                </div>
+                <p class="text-sm sm:text-base text-gray-600 mb-4">Technical Procedure Name</p>
+                <div class="flex items-center text-blue-600 font-semibold text-sm sm:text-base">
+                    <span>View Instructions</span>
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </div>
+            </a>
+            -->
+
+            <!-- Color options for new procedures:
+                 bg-blue-100 / text-blue-600
+                 bg-teal-100 / text-teal-600
+                 bg-pink-100 / text-pink-600
+                 bg-yellow-100 / text-yellow-600
+                 bg-indigo-100 / text-indigo-600
+                 bg-cyan-100 / text-cyan-600
+            -->
+
+            <!-- Icon options (change fa-syringe to any of these):
+                 fa-procedures, fa-user-md, fa-heartbeat, fa-stethoscope,
+                 fa-syringe, fa-capsules, fa-hospital, fa-notes-medical,
+                 fa-briefcase-medical, fa-first-aid, fa-band-aid
+            -->
         </div>
 
         <!-- Footer Info Box -->
-        <div class="text-center mt-12">
-            <div class="bg-white rounded-xl shadow-md p-6 max-w-2xl mx-auto">
-                <i class="fas fa-info-circle text-blue-600 text-3xl mb-3"></i>
-                <p class="text-gray-700 text-lg">
+        <div class="text-center mt-8 sm:mt-12">
+            <div class="bg-white rounded-xl shadow-md p-4 sm:p-6 max-w-2xl mx-auto mx-3">
+                <i class="fas fa-info-circle text-blue-600 text-2xl sm:text-3xl mb-2 sm:mb-3"></i>
+                <p class="text-gray-700 text-base sm:text-lg">
                     These instructions are general guidelines. Always follow your surgeon's specific advice.
                 </p>
             </div>
         </div>
     </div>
+
+    <!-- Icon Attribution -->
+    <p class="text-center text-xs text-gray-400 mt-6 mb-4 px-4">
+        Icons by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">Icons8</a>
+    </p>
 </body>
 </html>
