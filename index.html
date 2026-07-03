@@ -11,18 +11,15 @@
     <meta name="referrer" content="strict-origin-when-cross-origin">
     <meta name="permissions-policy" content="geolocation=(), microphone=(), camera=()">
     <title>Dr Narendra - Post Operative Instructions</title>
-    <script src="https://cdn.tailwindcss.com" integrity="sha384-C6RzsynM9u94gFlUstIOrAbYkQJJpM+p+qEYuO8TFfH2Kq9+T9i8aZK7VRKZ5Wo3k" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVJkEZSMUkrQ6usznXo+7mWK9eL7XL1+UFVWffJMAnlu62awQq9duJvTIPSvEStAM0s/VVB6PFw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        body {
-            font-family: 'Inter', sans-serif;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; }
+
         .procedure-card {
             background-color: white !important;
             border: 3px solid #999999 !important;
@@ -41,42 +38,32 @@
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15) !important;
             border-color: #3b82f6 !important;
         }
+
         .icon-wrapper {
-            width: 80px;
-            height: 80px;
+            width: 80px; height: 80px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: flex; align-items: center; justify-content: center;
             margin-bottom: 16px;
         }
         .icon-wrapper img {
-            width: 48px;
-            height: 48px;
-            object-fit: contain;
+            width: 48px; height: 48px; object-fit: contain;
         }
+
         .card-title {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #1f2937;
-            margin-bottom: 8px;
+            font-size: 1.25rem; font-weight: 700;
+            color: #1f2937; margin-bottom: 8px;
         }
         .card-subtitle {
-            font-size: 0.875rem;
-            color: #6b7280;
+            font-size: 0.875rem; color: #6b7280;
             margin-bottom: 16px;
         }
         .card-link {
-            display: inline-flex;
-            align-items: center;
-            color: #2563eb;
-            font-weight: 600;
-            text-decoration: none;
-            margin-top: auto;
+            display: inline-flex; align-items: center;
+            color: #2563eb; font-weight: 600;
+            text-decoration: none; margin-top: auto;
         }
-        .card-link:hover {
-            text-decoration: underline;
-        }
+        .card-link:hover { text-decoration: underline; }
+
         .procedures-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -86,25 +73,23 @@
         }
     </style>
 </head>
+
 <body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen">
     <div class="container mx-auto px-4 py-12">
+
         <!-- Header Section -->
         <div class="text-center mb-12">
             <div class="mb-4">
                 <i class="fas fa-user-md text-blue-600 text-5xl mb-3 inline-block"></i>
             </div>
-            <h1 class="text-5xl font-bold text-gray-800 mb-2">
-                Dr Narendra
-            </h1>
-            <h2 class="text-3xl font-semibold text-blue-600 mb-4">
-                Post Operative Instructions
-            </h2>
+            <h1 class="text-5xl font-bold text-gray-800 mb-2">Dr Narendra</h1>
+            <h2 class="text-3xl font-semibold text-blue-600 mb-4">Post Operative Instructions</h2>
             <p class="text-xl text-gray-600">Select your procedure for personalized care instructions</p>
         </div>
 
         <!-- Procedure Cards Grid -->
         <div class="procedures-grid">
-           
+
             <!-- Laparoscopic Cholecystectomy -->
             <a href="cholecystectomy.html" class="procedure-card">
                 <div class="icon-wrapper bg-green-100">
@@ -112,10 +97,7 @@
                 </div>
                 <h3 class="card-title">Gallbladder Removal</h3>
                 <p class="card-subtitle">Laparoscopic Cholecystectomy</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
 
             <!-- Inguinal Hernia Repair -->
@@ -125,10 +107,7 @@
                 </div>
                 <h3 class="card-title">Groin Hernia Repair</h3>
                 <p class="card-subtitle">Inguinal Hernia Repair</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
 
             <!-- Hiatal Hernia Repair -->
@@ -138,10 +117,7 @@
                 </div>
                 <h3 class="card-title">Hiatal Hernia Repair</h3>
                 <p class="card-subtitle">Laparoscopic Hiatal Hernia Repair</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
 
             <!-- Fundoplication -->
@@ -151,10 +127,7 @@
                 </div>
                 <h3 class="card-title">Fundoplication</h3>
                 <p class="card-subtitle">Anti-Reflux Surgery</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
 
             <!-- Umbilical Hernia Repair -->
@@ -164,10 +137,7 @@
                 </div>
                 <h3 class="card-title">Umbilical/Epigastric/Ventral Hernia</h3>
                 <p class="card-subtitle">Abdominal wall hernia repair</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
 
             <!-- Endoscopy -->
@@ -177,10 +147,7 @@
                 </div>
                 <h3 class="card-title">Endoscopy</h3>
                 <p class="card-subtitle">Upper Gastrointestinal Endoscopy</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
 
             <!-- Zenker's Diverticulum -->
@@ -190,11 +157,9 @@
                 </div>
                 <h3 class="card-title">Oesophageal Outpouch Surgery</h3>
                 <p class="card-subtitle">Zenker's Diverticulum Repair</p>
-                <span class="card-link">
-                    View Instructions
-                    <i class="fas fa-arrow-right ml-2"></i>
-                </span>
+                <span class="card-link">View Instructions <i class="fas fa-arrow-right ml-2"></i></span>
             </a>
+
         </div>
 
         <!-- Footer Info Box -->
@@ -210,7 +175,17 @@
 
     <!-- Icon Attribution -->
     <p class="text-center text-xs text-gray-400 mt-6 mb-4 px-4">
-        Icons by <a href="https://icons8.com" target="_blank" rel="noopener noreferrer" class="underline hover:text-gray-600">Icons8</a>
+        Icons by <a href="https://icons8.com" target="_blank" class="underline hover:text-gray-600">Icons8</a>
     </p>
+
+    <!-- FINAL OVERRIDE: GUARANTEED BORDER VISIBILITY -->
+    <style>
+        .procedure-card {
+            border: 3px solid #999 !important;
+            border-radius: 16px !important;
+            background: white !important;
+        }
+    </style>
+
 </body>
 </html>
